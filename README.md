@@ -4,14 +4,17 @@ yt-thumbnail is a TypeScript-powered youTube thumbnail editor designed to simpli
 
 ## 💡 How Does It Work?
 
+Simply open index
+
 1. **Clone the Repo:**
    ```bash
    git clone https://github.com/erayaydogdu/yt-thumbnail.git
    ```
 
-2. **Install:**
+2. **Install build:**
    ```bash
-   npm install && npm start
+   npm install && tsc --build
+   #output dir is js
    ```
 
 ## 🎉 Features

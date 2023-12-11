@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>YouTube Thumbnail Editor</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    </head>
+    <body data-theme="cmyk" class="bg-gray-100">
+        <div class="container w-full md:max-w-3xl mx-auto flex flex-col min-h-screen"> 
+            <div class="flex justify-center p-4 md:p-0 mt-10 md:mt-4">
+                <svg class="w-32 mx-auto" width="65px" height="65px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74 211.658C99.0457 142.251 155.836 87.1314 226.717 108.765C276.177 123.861 255.428 151.992 274.648 170.486C285.492 178.829 314.933 167.631 322.548 178.047C329.28 187.259 324.416 204.065 322.548 215.097C315.179 258.597 265.313 265 223.065 265" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M325 194C321.518 187.392 313.572 181.214 304 176" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M132.242 181.22C129.728 194.908 90.9731 288.143 131.095 296.086C205.608 306.73 196.665 221.971 196.665 169" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M234 168V173" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="flex flex-wrap gap-3 w-full p-5">
+                <h1 class="text-primary">Youtube Thumbnail Editor</h1>
+                    <p class="text-muted">Generating YouTube video thumbnails for text overlay.</p>
+            </div>
+            <div class="flex flex-wrap gap-3 w-full p-5">
+                <label class="relative w-full flex flex-col">
+                    <span class="font-bold mb-3">Youtube Url</span>
+                    <input id="yt-link"
+                            type="text"
+                            class="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300"
+                            placeholder="https://www.youtube.com/watch?v=K_UjGhSWKZM"
+                            value="https://www.youtube.com/watch?v=K_UjGhSWKZM" />
+                  <svg class="absolute bottom-0 left-0 -mb-0.5 transform translate-x-1/2 -translate-y-1/2 text-black peer-placeholder-shown:text-gray-300 h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 461.001 461.001" xml:space="preserve">
+                    <g>
+                        <path style="fill:#F61C0D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                            c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                            C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                            c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+                    </g>
+                  </svg>
+                </label>
+                <label class="relative w-full flex flex-col">
+                    <span class="font-bold mb-3">Hero Text</span>
+                    <img id="yt-thumb" style="display: none"></img>
+                    <input id="yt-title"
+                            type="text"
+                            class="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300"
+                            placeholder="Metallica is coming to Amsterdam!"
+                            value="Metallica is coming to Amsterdam!" />
+                    <svg class="absolute bottom-0 left-0 -mb-0.5 transform translate-x-1/2 -translate-y-1/2 peer-placeholder-shown:text-gray-300 h-6 w-6" style="fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M225.35 216.72v222.625h61.727V216.72h84.138v-50.492H141.211v50.492h84.139z m214.488-5.739v-44.754h-55.83v44.754h55.83z m-55.83 30.602v197.762h55.83V241.583h-55.83z m155.514 0v-59.29h-55.83v59.29h-33.813v36.34h33.813V394.59c0 9.945 1.704 17.978 5.111 24.098 3.408 6.12 8.06 10.838 13.958 14.154 5.897 3.315 12.712 5.546 20.444 6.694 7.733 1.147 15.924 1.72 24.573 1.72 5.505 0 11.14-0.127 16.907-0.382 5.766-0.255 11.008-0.765 15.726-1.53v-42.077a80.26 80.26 0 0 1-8.256 1.148c-2.883 0.255-5.898 0.382-9.043 0.382-9.436 0-15.727-1.53-18.872-4.59-3.146-3.06-4.718-9.18-4.718-18.36v-97.926h40.89v-36.34h-40.89z m54.076-75.356v273.118h55.83V166.227h-55.83z m221.566 153.007H724.34c0.263-3.825 1.114-8.16 2.556-13.005 1.442-4.846 3.932-9.436 7.47-13.771 3.539-4.335 8.257-7.97 14.154-10.902 5.898-2.932 13.303-4.399 22.214-4.399 13.63 0 23.787 3.57 30.471 10.71 6.684 7.141 11.336 17.597 13.958 31.367z m-90.823 34.427h146.653c1.048-15.3-0.263-29.964-3.932-43.99-3.67-14.025-9.633-26.52-17.89-37.487-8.256-10.965-18.806-19.7-31.65-26.202-12.843-6.503-27.914-9.754-45.214-9.754-15.465 0-29.553 2.677-42.266 8.033-12.712 5.355-23.655 12.686-32.83 21.994-9.173 9.308-16.25 20.338-21.23 33.088-4.98 12.751-7.47 26.522-7.47 41.312 0 15.301 2.424 29.327 7.273 42.078 4.85 12.75 11.73 23.716 20.641 32.896 8.912 9.18 19.79 16.257 32.634 21.23 12.843 4.973 27.26 7.46 43.248 7.46 23.066 0 42.724-5.101 58.975-15.302 16.252-10.2 28.309-27.158 36.172-50.875h-49.146c-1.835 6.12-6.815 11.922-14.94 17.405-8.126 5.483-17.824 8.224-29.095 8.224-15.727 0-27.784-3.953-36.172-11.858-8.387-7.905-12.974-20.656-13.76-38.252z m-583.13 183.354H882.79v46.349H141.21v-46.349z m0 139.046H882.79v46.349H141.21V676.06z m0 139.046h556.183v46.348H141.211v-46.348z"  />
+                    </svg>
+                </label>
+              
+                <label class="relative flex-1 flex flex-col">
+                  <span class="font-bold mb-3">Image size</span>
+                  <input id="yt-width" type="range" step="10" min="100" max="1920" value="400" class="range range-xs range-secondary" />
+                  <output id="yt-width-display"></output>
+                </label>
+              
+                <label class="relative flex-1 flex flex-col">
+                  <span class="font-bold flex items-center gap-3 mb-3">
+                    Text size
+                  </span>
+                  <input class="range range-xs range-success" id="yt-text" type="range" step="1" min="8" max="128" value="20" />
+                  <output id="yt-text-display"></output>
+                </label>
+                <label class="relative w-full flex flex-col"></label>
+                <label class="relative flex-1 flex flex-col">
+                    <span class="font-bold mb-3">Padding X</span>
+                    <input class="range range-xs range-warning" id="yt-padx" type="range" step="1" min="8" max="1920" value="375" />
+                    <output id="yt-padx-display"></output>
+                  </label>
+                
+                  <label class="relative flex-1 flex flex-col">
+                    <span class="font-bold flex items-center gap-3 mb-3">
+                        Padding Y
+                    </span>
+                    <input class="range range-xs range-info" id="yt-pady" type="range" step="1" min="0" max="960" value="35" />
+                    <output id="yt-pady-display"></output>
+                  </label>
+            </div>
+            <div id="yt-error">
+               
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 w-full p-5">
+                <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><canvas id="yt-canvas" width="480" height="360"></canvas></figure>
+                    <div class="card-body">
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-error btn-outline" id="btnReset">
+                            <span class="material-icons">restart_alt</span>
+                            Reset Settings
+                        </button>
+                        <button class="btn btn-outline" id="btnSave">
+                            <span class="material-icons">download</span>
+                            Download Image
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src='js/index.js'></script>
+    </body>
+</html>
