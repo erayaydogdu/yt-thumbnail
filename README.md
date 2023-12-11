@@ -26,6 +26,3 @@ Simply open index
 ## 🚀 Contribute
 
 Feel the vibe? Contribute! Fork, add some flair, and send a pull request. 
-
-
-![yt-thumbnail](/assets/exampe.png)
