@@ -5,9 +5,10 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/assets/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body data-theme="cmyk" class="bg-gray-100">
-        <div class="container w-full md:max-w-3xl mx-auto flex flex-col min-h-screen"> 
+        <div class="container w-full md:max-w-3xl mx-auto flex flex-col"> 
             <div class="flex justify-center p-4 md:p-0 mt-10 md:mt-4">
                 <svg class="w-32 mx-auto" width="65px" height="65px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M74 211.658C99.0457 142.251 155.836 87.1314 226.717 108.765C276.177 123.861 255.428 151.992 274.648 170.486C285.492 178.829 314.933 167.631 322.548 178.047C329.28 187.259 324.416 204.065 322.548 215.097C315.179 258.597 265.313 265 223.065 265" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
@@ -16,7 +17,7 @@
                     <path d="M234 168V173" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-            <div class="flex flex-wrap gap-3 w-full p-5">
+            <div class="flex flex-wrap gap-3 w-full p-4">
                 <h1 class="text-primary">Youtube Thumbnail Editor</h1>
                     <p class="text-muted">Generating YouTube video thumbnails for text overlay.</p>
             </div>
@@ -100,7 +101,22 @@
                 </div>
             </div>
         </div>
-        
+        <footer class="footer items-center p-2 bg-neutral text-neutral-content">
+            <aside class="items-center grid-flow-col">
+              <svg class="" width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M74 211.658C99.0457 142.251 155.836 87.1314 226.717 108.765C276.177 123.861 255.428 151.992 274.648 170.486C285.492 178.829 314.933 167.631 322.548 178.047C329.28 187.259 324.416 204.065 322.548 215.097C315.179 258.597 265.313 265 223.065 265" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M325 194C321.518 187.392 313.572 181.214 304 176" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M132.242 181.22C129.728 194.908 90.9731 288.143 131.095 296.086C205.608 306.73 196.665 221.971 196.665 169" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M234 168V173" stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+              <p> 2023 - Open source</p>
+            </aside> 
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a href="https://github.com/erayaydogdu/yt-thumbnail">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </nav>
+          </footer>
         <script src='js/index.js'></script>
     </body>
 </html>

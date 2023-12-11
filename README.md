@@ -28,4 +28,4 @@ Simply open index
 Feel the vibe? Contribute! Fork, add some flair, and send a pull request. 
 
 
-![yt-thumbnail](link-to-a-funny-gif.gif)
+![yt-thumbnail](/assets/exampe.png)
